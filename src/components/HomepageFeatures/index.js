@@ -13,7 +13,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '纯钧——中国十大名剑之一',
+    title: '承影——中国十大名剑之一',
     Svg: require('@site/static/img/logo-dark.svg').default,
     description: (
       <>
