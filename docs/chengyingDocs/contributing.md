@@ -1,5 +1,5 @@
 ---
-title: Contributing to ChunJun
+title: Contributing to ChengYing
 sidebar_position: 10
 ---
 
@@ -19,11 +19,11 @@ eg:
 [hotfix-31280][core] 修复bigdecimal转decimal运行失败问题  
 [feat-31372][rdb] RDB结果表Upsert模式支持选择更新策略
 4. 多次提交使用rebase 合并成一个。
-5. pr 名称：[chunjun-issuseid][module名称] 标题
+5. pr 名称：[chengying-issuseid][module名称] 标题
 6. 对应模块的test 测试通过，并通过代码检查
 
 #### 代码检查插件
-chunjun  当前使用google-java-format ，严格要求必须通过google-java-format 的格式转换，在maven 里面通过设置，  
+chengying  当前使用google-java-format ，严格要求必须通过google-java-format 的格式转换，在maven 里面通过设置，  
 如果不满足google-java-format 格式要求，编译阶段将会出现异常；
 
 #### Commit type 类别
@@ -38,5 +38,5 @@ chunjun  当前使用google-java-format ，严格要求必须通过google-java-f
 eg: feat_1.12_11111  
 * bug修复： hotfix: hotfix_flink版本_issuseId
 eg: hotfix_1.12_11112  
-注意当前chunjun版本依赖flink 版本上进行开发,比如1.12_release 就是对应的flink 1.12 版本；
+注意当前chengying版本依赖flink 版本上进行开发,比如1.12_release 就是对应的flink 1.12 版本；
 所以在提交分支的时候请添加上对应的版本

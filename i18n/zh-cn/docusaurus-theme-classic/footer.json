@@ -17,15 +17,15 @@
   },
   "link.item.label.Issue Tracker": {
     "message": "Issue Tracker",
-    "description": "The label of footer link with label=Issue Tracker linking to https://github.com/DTStack/chunjun/issues"
+    "description": "The label of footer link with label=Issue Tracker linking to https://github.com/DTStack/chengying/issues"
   },
   "link.item.label.Pull Requests": {
     "message": "Pull Requests",
-    "description": "The label of footer link with label=Pull Requests linking to https://github.com/DTStack/chunjun/pulls"
+    "description": "The label of footer link with label=Pull Requests linking to https://github.com/DTStack/chengying/pulls"
   },
   "link.item.label.Discussions": {
     "message": "Discussions",
-    "description": "The label of footer link with label=Discussions linking to https://github.com/DTStack/chunjun/discussions"
+    "description": "The label of footer link with label=Discussions linking to https://github.com/DTStack/chengying/discussions"
   },
   "link.item.label.Blog": {
     "message": "博客",
@@ -33,7 +33,7 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/DTStack/chunjun"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/DTStack/chengying"
   },
   "copyright": {
     "message": "Copyright © 2022 袋鼠云, Inc. Built with Docusaurus.",
