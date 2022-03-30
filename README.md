@@ -1,3 +1,3 @@
 # ChunJun
 
-This repository contains the ChunJun website: https://dtstack.github.io/chunjun-web/
+This repository contains the ChengYing website: https://dtstack.github.io/chengying-web/

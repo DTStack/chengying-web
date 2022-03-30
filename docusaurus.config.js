@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'ChengYing 承影',
   tagline: 'Data Integration Tool',
-  url: 'https://dtstack.github.io/chunjun-web/',
-  baseUrl: '/chunjun-web/',
+  url: 'https://dtstack.github.io/chengying-web/',
+  baseUrl: '/chengying-web/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'DTStack', // Usually your GitHub org/user name.
-  projectName: 'chunjun-web', // Usually your repo name.
+  projectName: 'chengying-web', // Usually your repo name.
   presets: [
     [
       'classic',
@@ -52,21 +52,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'ChunJun 纯钧',
+        title: 'ChengYing 承影',
         logo: {
-          alt: 'ChunJun Logo',
+          alt: 'ChengYing Logo',
           src: 'img/logo-dark.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'chunjunDocs/intro',
+            docId: 'chengyingDocs/intro',
             position: 'left',
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            to: 'https://github.com/DTStack/chunjun/releases',
+            to: 'https://github.com/DTStack/chengying/releases',
             position: 'left',
             label: 'Download',
           },
@@ -81,7 +81,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/DTStack/chunjun',
+            href: 'https://github.com/DTStack/chengying',
             label: 'GitHub',
             position: 'right',
           }
@@ -104,15 +104,15 @@ const config = {
             items: [
               {
                 label: 'Issue Tracker',
-                href: 'https://github.com/DTStack/chunjun/issues',
+                href: 'https://github.com/DTStack/chengying/issues',
               },
               {
                 label: 'Pull Requests',
-                href: 'https://github.com/DTStack/chunjun/pulls',
+                href: 'https://github.com/DTStack/chengying/pulls',
               },
               {
                 label: 'Discussions',
-                href: 'https://github.com/DTStack/chunjun/discussions',
+                href: 'https://github.com/DTStack/chengying/discussions',
               },
             ],
           },
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/DTStack/chunjun',
+                href: 'https://github.com/DTStack/chengying',
               },
             ],
           },
