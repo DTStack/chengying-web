@@ -1,6 +1,6 @@
 ---
 title: 如何贡献承影
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## 如何提问题和需求？
