@@ -1,5 +1,5 @@
 ---
-title: Contributing to ChengYing
+title: 如何贡献承影
 sidebar_position: 10
 ---
 
