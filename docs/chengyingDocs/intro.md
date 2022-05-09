@@ -1,5 +1,5 @@
 ---
-id: doc_index
+id: intro
 title: 什么是Chengying
 sidebar_position: 1
 ---
