@@ -10,7 +10,7 @@ const config = {
   tagline: 'Data Integration Tool',
   url: 'https://dtstack.github.io/chengying-web/',
   baseUrl: '/chengying-web/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'DTStack', // Usually your GitHub org/user name.
