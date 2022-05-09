@@ -60,7 +60,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'chengyingDocs/intro',
+            docId: 'doc_index',
             position: 'left',
             label: 'Docs',
           },

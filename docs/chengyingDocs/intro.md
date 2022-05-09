@@ -1,5 +1,5 @@
 ---
-id: chengyingDocs/intro
+id: doc_index
 title: 什么是Chengying
 sidebar_position: 1
 ---
