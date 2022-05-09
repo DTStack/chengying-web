@@ -39,7 +39,7 @@ const config = {
   ],
 
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh-cn',
     locales: ['en', 'zh-cn'],
     localeConfigs: {
       "zh-cn": {
