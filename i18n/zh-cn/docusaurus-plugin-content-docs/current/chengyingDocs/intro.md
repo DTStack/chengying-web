@@ -51,11 +51,12 @@ Hadoop集群、大数据平台在日常运维中涉及到的节点扩容缩容�
 
 ## 名词解释
 
-
-
-产品	"产品"指用EM部署的大数据产品，如数栈（DTinsight）、云日志（EasyLog）等，作为EM最高级别的组织单位。
-组件	"组件"一般和"组件安装包"等同，指产品下包含多个组件，亦产品下包含多个组件安装包，如数栈（DTinsight）产品下包含Hadoop、DTBase、DTCommon、DTBatch、DTStream等多个组件，代表不同的应用。
-服务组	"服务组"值组件下的服务分类，如Hadoop组件下包含HDFS、Spark、Yarn、Flink、Default等服务组，进行服务区分。
-服务	"服务"指服务组下的具体服务，如HDFS服务组下包含hdfs_datanode、hdfs_journalnode、hdfs_namenode、hdfs_zkfc等组件；Spark服务组下包含hivemetastore、spark_historyserver、thriftserver等组件。
-主机分组	"主机分组"指对主机进行人为分组，当主机数量过多时可进行分组，方便管理。
-主机	"主机"指服务器，包含物理机、虚拟机，指产品部署时需要的硬件资源，通常以主机IP或主机名称进行区分。
+| 名词      | 解释 |
+| ----------- | ----------- |
+| 产品      | "产品"指用EM部署的大数据产品，如数栈（DTinsight）、云日志（EasyLog）等，作为EM最高级别的组织单位。       |
+| 组件   | "组件"一般和"组件安装包"等同，指产品下包含多个组件，亦产品下包含多个组件安装包，如数栈（DTinsight）产品下包含Hadoop、DTBase、DTCommon、DTBatch、DTStream等多个组件，代表不同的应用。        |
+| 服务组  | "服务组"值组件下的服务分类，如Hadoop组件下包含HDFS、Spark、Yarn、Flink、Default等服务组，进行服务区分。 | 
+| 服务 | "服务"指服务组下的具体服务，如HDFS服务组下包含hdfs_datanode、hdfs_journalnode、hdfs_namenode、hdfs_zkfc等组件；Spark服务组下包含hivemetastore、spark_historyserver、thriftserver等组件。 |
+| 服务 | "服务"指服务组下的具体服务，如HDFS服务组下包含hdfs_datanode、hdfs_journalnode、hdfs_namenode、hdfs_zkfc等组件；Spark服务组下包含hivemetastore、spark_historyserver、thriftserver等组件。 |
+| 主机分组 | "主机分组"指对主机进行人为分组，当主机数量过多时可进行分组，方便管理。 |
+| 主机 | "主机"指服务器，包含物理机、虚拟机，指产品部署时需要的硬件资源，通常以主机IP或主机名称进行区分 |
