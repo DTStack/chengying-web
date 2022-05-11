@@ -40,7 +40,8 @@ const config = {
 
   i18n: {
     defaultLocale: 'zh-cn',
-    locales: ['en', 'zh-cn'],
+    // locales: ['en', 'zh-cn'],
+    locales: ['zh-cn'],
     localeConfigs: {
       "zh-cn": {
         htmlLang: '中文',
