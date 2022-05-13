@@ -1,13 +1,15 @@
 ---
+id: quickstart
 title: 快速开始
 sidebar_position: 2
 ---
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 本文讨论如何快速部署承影。
 
 ## 环境要求
 
-| 类别     | **要求**                                                     |
-| -------- | ------------------------------------------------------------ |
+| 类别     | 要求                                                     |
+| -------- | ----------------------------------------------------------- |
 | 操作系统 | CentOS 7 以上                                                |
 | 时间同步 | 所有主机时区和时间必须一致                                   |
 | 磁盘目录 | 系统盘至少100G，数据盘挂载到 /data 目录                      |
@@ -28,7 +30,7 @@ $ sh install.sh local_ip			#local_ip为Chengying所在机器ip
 ```
 
 **安装完成后，使用 docker ps 命令检查服务状态**
-![](./image/CheckStatus.png)
+![](/img/quickstart/CheckStatus.png)
 
 **若有异常，可以使用 docker-compose up -d 命令进行重新启动**
 
