@@ -1,6 +1,6 @@
 ---
 id: intro
-title: 什么是Chengying
+title: 什么是ChengYing
 sidebar_position: 1
 ---
 
