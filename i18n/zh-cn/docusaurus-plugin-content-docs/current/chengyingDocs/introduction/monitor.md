@@ -39,4 +39,24 @@ DataSource选择prometheus，下方写查询条件，按照Grafana的标准语�
 ![q9](/img/monitor/importDashboard.png)
 
 ### 告警
+#### 告警内容设置
+以配置Redis的监控告警为例：
+
+步骤一：选择具体的仪表盘
+![q10](/img/monitor/redisBoard.png)
+步骤二：选择告警指标，进入编辑页面
+![q11](/img/monitor/editRedis.png)
+步骤三：切换到Alert配置页面，点击Create Alert
+![q12](/img/monitor/createAlert.png)
+步骤四：配置告警规则和告警通道，点击测试
+![q13](/img/monitor/testAlert.png)
+若无告警通道，在告警通道页面添加完成后再在此处设置。
+![q14](/img/monitor/newAlertChannel.png)
+步骤五：保存告警设置，同时用户可在告警规则页面查看配置的告警，支持对告警规则的启停、检索等
+![q15](/img/monitor/saveAlert.png)
+![q16](/img/monitor/alertList.png)
+
+#### 告警通道
+平台提供 “短信通道、邮件通道、钉钉通道、企业微信通道、自定义通道” 5种通道配置，用户根据需要选择合适通道并填写通道配置信息、消息模板、地址等完成通道配置。
+![q17](/img/monitor/addChannel.png)
 
