@@ -1,6 +1,6 @@
 ---
-title: 如何贡献ChengYing
-sidebar_position: 3
+title: 贡献指南
+sidebar_position: 4
 ---
 
 ## 如何提问题和需求？

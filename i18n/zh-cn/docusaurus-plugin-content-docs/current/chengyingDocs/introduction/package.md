@@ -1,4 +1,5 @@
 ---
+id: package
 title: 如何制作产品包
 sidebar_position: 4
 ---
