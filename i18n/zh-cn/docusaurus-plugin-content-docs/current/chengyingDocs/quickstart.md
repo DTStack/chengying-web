@@ -20,12 +20,12 @@ sidebar_position: 2
 
 ## 快速启动
 
-**请自行下载 ChengYing [最新版本的离线安装包](https://)**
+**请自行下载 ChengYing [最新版本的离线安装包](https://github.com/DTStack/chengying/releases/download/v1.0.0/chengying-release-1.0.tar.gz)**
 
 ```
 # 解压安装包
-$ tar zxvf xxx
-$ cd xxx
+$ tar zxvf chengying-release-1.0.tar.gz
+$ cd chengying-release-1.0
 # 运行安装脚本
 $ sh install.sh local_ip			#local_ip为Chengying所在机器ip
 ```
@@ -36,16 +36,16 @@ $ sh install.sh local_ip			#local_ip为Chengying所在机器ip
 **若有异常，可以使用 docker-compose up -d 命令进行重新启动**
 
 ```
-$ cd xxx/easymanager
-$ ./docker-compose up -d
+$ cd chengying-release-1.0/easymanager
+$ docker-compose up -d
 ```
 
 **登录**
 
 ```
-地址：http://local_ip:80 # local_ip为Chengying所在机器ip
-用户名：admin
-密码：
+地址：http://local_ip # local_ip为Chengying所在机器ip
+用户名：admin@dtstack.com
+密码：DT#passw0rd2019
 ```
 
 ## 源码构建
@@ -101,11 +101,33 @@ git clone https://github.com/DTStack/chengying-agent.git
 - Go-bindata([go-bindata](https://github.com/go-bindata/go-bindata))
 
 **构建**
+
 支持三种操作系统linux/windows/darwin的构建
 ```
 make all
 ```
 
+### Chengying-Front
+基于 webpack 的开发配置环境，可以使用 npm 管理项目
+**克隆代码仓库**
+```
+git clone https://github.com/DTStack/chengying-front.git
+```
 
+**依赖**
+
+推荐使用 yarn 管理依赖
+```
+yarn add package.name
+```
+
+**构建**
+```
+##开发构建
+npm start 或者 npm run dev
+
+##生产构建
+npm run build
+```
 
 
