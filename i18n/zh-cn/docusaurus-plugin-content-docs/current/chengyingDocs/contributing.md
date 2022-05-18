@@ -46,4 +46,4 @@ Commit Message 三段式格式要求，模板：`[${jira-issue-id}] [${affected-
 
 我们使用钉钉 沟通交流，可以搜索群号[30537511]或者扫描下面的二维码进入钉钉群
 
-![ding](/img/ding.jpeg)
+![ding](/img/ding.jpg)
