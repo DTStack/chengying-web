@@ -14,7 +14,7 @@ sidebar_position: 1
 
 ![q1](/img/intro/img.png)
 
-产品部署之前需添加主机、及上传安装包，主机和安装包通过nginx进行服务转发，matinx是主程序服务，其中包含schema安装包文件解析，orchestrate组件依赖关系处理，instance exec执行引擎3部分。除此之外，promethus进行集群监控，以及通过grafana进行仪表盘展现，MySQL存储Easy Manager相关数据。Easy Manager所有的组件通过easyagent server服务与外部实体连接、调度。
+产品部署之前需添加主机、及上传安装包，主机和安装包通过nginx进行服务转发，matrix是主程序服务，其中包含schema安装包文件解析，orchestrate组件依赖关系处理，instance exec执行引擎3部分。除此之外，promethus进行集群监控，以及通过grafana进行仪表盘展现，MySQL存储Easy Manager相关数据。Easy Manager所有的组件通过easyagent server服务与外部实体连接、调度。
 
 ![q1](/img/intro/img_1.png)
 
