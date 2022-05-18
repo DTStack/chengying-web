@@ -3,35 +3,47 @@ title: 贡献指南
 sidebar_position: 4
 ---
 
-## 如何提问题和需求？
-当前提供了4个类型的问题分类：
-Feature request
-Ask a Question
-Bug report
-Development Task
+## 报告问题
 
-## 如何提交pr?
-1）新建issuse .描述问题信息。
-2）基于对应的release分支拉取开发分支,分支命名参考 【分支命名规范】
-3) commit 信息：[type-redmine] [module] msg，type 定义参考：【Commit type 类别】
-eg:
-[hotfix-31280][core] 修复bigdecimal转decimal运行失败问题
-[feat-31372][rdb] RDB结果表Upsert模式支持选择更新策略
-4）多次提交使用rebase 合并成一个。
-5）pr 名称：[chengying-issuseid][module名称] 标题
-6）对应模块的test 测试通过，并通过代码检查
+在报告任何关于 ChengYing 的问题时，请前往 [Issues](https://github.com/DTStack/chengying/issues) 。
 
-### Commit type 类别
-feat：表示是一个新功能（feature)
-hotfix：hotfix，修补bug
-docs：改动、增加文档
-opt：修改代码风格及opt imports这些，不改动原有执行的代码
-test：增加测试
+## 贡献流程
 
-### 分支命名规范
-新功能：feat: feat_flink版本_issuseid
-eg: feat_1.12_11111
-bug修复： hotfix: hotfix_flink版本_issuseid
-eg: hotfix_1.12_11112
-注意当前chengying版本依赖flink 版本上进行开发,比如1.12_release 就是对应的flink 1.12 版本；
-所以在提交分支的时候请添加上对应的版本
+这是一个贡献者工作流程的大致说明：
+
+1. 克隆 ChengYing 项目
+2. 从希望贡献的分支上创新新的分支，通常是 master 分支。
+3. 提交您的更改。
+4. 确保提交消息的格式正确。
+5. 将新分支推送到您克隆的代码库中。
+6. 执行检查表 pull request模版。
+7. 在提交 pull request 请求前, 请将您克隆的代码和远程代码库同步，这样您的 pull request 会简单清晰。
+
+
+
+## 代码约束
+
+保持代码的一致性，提高代码的可读性来保证代码的高质量及高维护性。我们的代码风格和标准 Java 约定一致，并参考《阿里巴巴Java开发手册》。
+
+
+## 代码风格
+ 
+## 框架使用规范
+
+## 命名规范
+
+## Commitment 规范
+
+Commit Message 三段式格式要求，模板：`[${jira-issue-id}] [${affected-component}] ${jira-issue-title}`
+
+* 根据issue-id，如: **[IssueId][ChengYing-Server] Translate "common module" page into Chinese**
+
+> TIP:xxx
+> 
+> 无issue-id时，可以分支命名，如：**[branchName][ChengYing-Server] Translate "common module" page into Chinese** 
+
+## 联系我们
+
+我们使用钉钉 沟通交流，可以搜索群号[30537511]或者扫描下面的二维码进入钉钉群
+
+![ding](/img/ding.jpeg)
