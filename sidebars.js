@@ -27,23 +27,38 @@ const sidebars = {
     },
   ],
    */
-  // docs: [
-  //   'introduction',
-  //   {
-  //     type: 'category',
-  //     label: 'Connectors',
-  //     link: {
-  //       type: 'generated-index',
-  //     },
-  //     collapsed: false,
-  //     items: [
-  //       'installation',
-  //       'configuration',
-  //       'playground',
-  //       'typescript-support',
-  //     ],
-  //   },
-  // ]
+  docs: [
+    'chengyingDocs/intro',
+    'chengyingDocs/quickstart',
+    {
+      type: 'category',
+      label: '功能介绍',
+      items: [
+          "chengyingDocs/introduction/install",
+          "chengyingDocs/introduction/cluster",
+          "chengyingDocs/introduction/clusterService",
+          "chengyingDocs/introduction/monitor",
+          "chengyingDocs/introduction/schema",
+      ]
+    },
+
+    'chengyingDocs/contributing',
+    'chengyingDocs/faq',
+    // {
+    //   type: 'category',
+    //   label: 'Connectors',
+    //   link: {
+    //     type: 'generated-index',
+    //   },
+    //   collapsed: false,
+    //   items: [
+    //     'installation',
+    //     'configuration',
+    //     'playground',
+    //     'typescript-support',
+    //   ],
+    // },
+  ]
 };
 
 module.exports = sidebars;
