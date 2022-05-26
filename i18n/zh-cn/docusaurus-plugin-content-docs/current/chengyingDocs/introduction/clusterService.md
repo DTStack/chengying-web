@@ -1,7 +1,6 @@
 ---
 id: clusterService
 title: 集群服务
-sidebar_position: 4
 ---
 
 ### 集群/产品概览
