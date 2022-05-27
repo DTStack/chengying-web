@@ -56,7 +56,7 @@ const config = {
         title: 'ChengYing 承影',
         logo: {
           alt: 'ChengYing Logo',
-          src: 'img/logo-dark.svg',
+          src: 'img/logo-light.png',
         },
         items: [
           {
