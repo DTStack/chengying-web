@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ChengYing 承影',
-  tagline: 'Data Integration Tool',
+  tagline: '全生命周期自动化运维平台',
   url: 'https://dtstack.github.io/chengying-web/',
   baseUrl: '/chengying-web/',
   onBrokenLinks: 'warn',
