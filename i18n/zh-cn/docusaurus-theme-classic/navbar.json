@@ -13,7 +13,7 @@
   },
   "item.label.Download": {
     "message": "下载",
-    "description": "Navbar item with label Blog"
+    "description": "Navbar item with label Download"
   },
   "item.label.GitHub": {
     "message": "GitHub",
