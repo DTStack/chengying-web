@@ -60,3 +60,10 @@ Hadoop集群、大数据平台在日常运维中涉及到的节点扩容缩容�
 | 服务 | "服务"指服务组下的具体服务，如HDFS服务组下包含hdfs_datanode、hdfs_journalnode、hdfs_namenode、hdfs_zkfc等组件；Spark服务组下包含hivemetastore、spark_historyserver、thriftserver等组件。 |
 | 主机分组 | "主机分组"指对主机进行人为分组，当主机数量过多时可进行分组，方便管理。                                                                                                              |
 | 主机 | "主机"指服务器，包含物理机、虚拟机，指产品部署时需要的硬件资源，通常以主机IP或主机名称进行区分                                                                                                 |
+
+
+## 快速体验
+
+体验地址：http://chengying.dtstack.cn  
+账号：chengying  
+密码：dtstack#123  
