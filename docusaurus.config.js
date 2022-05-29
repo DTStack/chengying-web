@@ -67,7 +67,9 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            to: 'https://github.com/DTStack/chengying/releases',
+            type: 'docSidebar',
+            sidebarId: 'download',
+            // to: 'https://github.com/DTStack/chengying/releases',
             position: 'left',
             label: 'Download',
           },
