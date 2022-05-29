@@ -3,7 +3,6 @@ title: 产品包制作
 ---
 
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
-
 # 产品包制作
 
 
@@ -14,7 +13,7 @@ title: 产品包制作
 
 2.各个服务目录（目录名为服务名）
 
-3.[mero](https://dtstack-download.oss-cn-hangzhou.aliyuncs.com/chengying/mero) 可执行文件
+3.[mero](https://dtstack-download.oss-cn-hangzhou.aliyuncs.com/chengying/mero)可执行文件
 
 
 
@@ -356,45 +355,9 @@ mkdir -p {logs,run}
 ```bash
 #!/bin/bash
 
-ulimit -c unlimited
-
 source /etc/profile
 
-CMD_PATH=`dirname $0`
-CMD_HOME=`cd "$CMD_PATH"/../; pwd`
-LS_CONF_DIR=$CMD_HOME/conf
-LS_LIB_DIR=$CMD_HOME/lib
-
-ENTRY_POINT_CLASS='主类名'
-
-unset CDPATH
-export basedir=$(cd `dirname $0`/..; pwd)
-
-if [[ ! ${JAVA_OPTS} =~ "-server" ]]; then JAVA_OPTS="${JAVA_OPTS} -server"; fi
-if [[ ! ${JAVA_OPTS} =~ "UseG1GC" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+UseG1GC"; fi
-if [[ ! ${JAVA_OPTS} =~ "-Xmx" ]]; then JAVA_OPTS="${JAVA_OPTS} -Xmx2048m"; fi
-if [[ ! ${JAVA_OPTS} =~ "-Xms" ]]; then JAVA_OPTS="${JAVA_OPTS} -Xms2048m"; fi
-if [[ ! ${JAVA_OPTS} =~ "MaxMetaspaceSize" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:MaxMetaspaceSize=1024M"; fi
-if [[ ! ${JAVA_OPTS} =~ "UseCompressedClassPointers" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:-UseCompressedClassPointers"; fi
-if [[ ! ${JAVA_OPTS} =~ "-Xloggc" ]]; then JAVA_OPTS="${JAVA_OPTS} -Xloggc:./logs/gc/gc.log"; fi
-if [[ ! ${JAVA_OPTS} =~ "UseGCLogFileRotation" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+UseGCLogFileRotation"; fi
-if [[ ! ${JAVA_OPTS} =~ "NumberOfGCLogFiles" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:NumberOfGCLogFiles=5"; fi
-if [[ ! ${JAVA_OPTS} =~ "GCLogFileSize" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:GCLogFileSize=512M"; fi
-if [[ ! ${JAVA_OPTS} =~ "HeapDumpPath" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:HeapDumpPath=./run"; fi
-if [[ ! ${JAVA_OPTS} =~ "HeapDumpOnOutOfMemoryError" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+HeapDumpOnOutOfMemoryError"; fi
-if [[ ! ${JAVA_OPTS} =~ "ExitOnOutOfMemoryError" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+ExitOnOutOfMemoryError"; fi
-if [[ ! ${JAVA_OPTS} =~ "MaxGCPauseMillis" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:MaxGCPauseMillis=20"; fi
-if [[ ! ${JAVA_OPTS} =~ "PrintGCDetails" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+PrintGCDetails"; fi
-if [[ ! ${JAVA_OPTS} =~ "PrintGCDateStamps" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+PrintGCDateStamps"; fi
-if [[ ! ${JAVA_OPTS} =~ "PrintHeapAtGC" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+PrintHeapAtGC"; fi
-if [[ ! ${JAVA_OPTS} =~ "PrintGCApplicationStoppedTime" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+PrintGCApplicationStoppedTime"; fi
-if [[ ! ${JAVA_OPTS} =~ "PrintGCApplicationConcurrentTime" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:+PrintGCApplicationConcurrentTime"; fi
-if [[ ! ${JAVA_OPTS} =~ "OmitStackTraceInFastThrow" ]]; then JAVA_OPTS="${JAVA_OPTS} -XX:-OmitStackTraceInFastThrow"; fi
-if [[ ! ${JAVA_OPTS} =~ "encoding" ]]; then JAVA_OPTS="${JAVA_OPTS} -Dfile.encoding=utf-8"; fi
-
-JMX_OPTS="$JMX_OPTS -javaagent:prometheus/jmx_prometheus_javaagent-0.3.1.jar=9515:prometheus/java.yml -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.local.only=false"
-exec $JAVA_HOME/bin/java $JAVA_OPTS -Djava.net.preferIPv4Stack=true -cp $basedir/lib/$LIB $JMX_OPTS $ENTRY_POINT_CLASS "$@"
-
+exec $JAVA_HOME/bin/java -jar test.jar
 ```
 
 
@@ -451,15 +414,8 @@ exit $ret
 parent_product_name: DTinsight
 product_name: Test_pkg
 product_version: v1.0.1
-
+ 
 service:
-  mysql@DTBase.mysql:
-    config:
-      user: root
-      password: admin123
-      port: 3306
-      mysql_db: test
-      
 
   Back:
     version: v1.0.1
@@ -479,14 +435,25 @@ service:
       prometheus_port: 9515      ##配置服务启动的export的监听端口
     group: test          ##服务的分组，跟页面的服务展示有关系
     config:       ##配置映射,配置文件需要在config_paths中定义
-      mysql_ip: ${@mysql}        ##获取mysql服务的部署地址
-      mysql_port: ${mysql.port}  ##获取mysql服务的端口配置
-      mysql_user: ${mysql.user}  ##获取mysql服务的用户配置
-      mysql_password: ${mysql.password}  ##获取mysql服务的密码配置
-      mysql_db: ${mysql.mysql_db}    ##获取mysql服务的DB配置
-      is_redis_standalone: ${redis.is_redis_standalone}
       java_opts: "-Xms2048m -Xmx2048m"
+      service_port: 8090
 ```
+
+
+
+## mero打包
+
+**打包准备**
+
+![Beforemero](/img/schema/Beforemero.png)
+
+
+
+**执行mero**
+
+![emero](/img/schema/mero.png)
+
+
 
 
 
