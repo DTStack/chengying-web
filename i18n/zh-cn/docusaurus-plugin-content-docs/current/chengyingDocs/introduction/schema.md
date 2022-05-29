@@ -21,7 +21,7 @@ title: 产品包制作
 
 
 
-> 首先，schema文件是一个标准的yaml文件
+> schema文件是一个标准的yaml文件
 
 
 
@@ -277,7 +277,7 @@ Product package create success: "product_name_product_version.tar"
 
 
 
-> 首先，在制作产品包之前，我们先回顾一下一个jar的启停维护方式。
+> 在制作产品包之前，我们先回顾一下一个jar的启停维护方式。
 
 
 
