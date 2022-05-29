@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ChengYing 承影',
-  tagline: '全生命周期自动化运维平台',
+  tagline: '一站式全自动化全生命周期运维管家',
   url: 'https://dtstack.github.io/chengying-web/',
   baseUrl: '/chengying-web/',
   onBrokenLinks: 'warn',
@@ -56,7 +56,7 @@ const config = {
         title: 'ChengYing 承影',
         logo: {
           alt: 'ChengYing Logo',
-          src: 'img/logo-dark.svg',
+          src: 'img/logo-light.png',
         },
         items: [
           {
