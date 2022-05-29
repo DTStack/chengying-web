@@ -445,13 +445,51 @@ service:
 
 **打包准备**
 
-![Beforemero](/img/schema/Beforemero.png)
+````bash
+[root@rel43-em mero]# ls -l
+total 4
+drwxr-xr-x 5 root root   40 May 30 00:09 Back
+-rw-r--r-- 1 root root 1097 May 30 00:08 schema.yml
+[root@rel43-em mero]# ls -R
+.:
+Back  schema.yml
+
+./Back:
+bin  conf  lib
+
+./Back/bin:
+base.sh  health.sh  post_deploy.sh
+
+./Back/conf:
+application.properties
+
+./Back/lib:
+test.jar
+[root@rel43-em mero]# 
+````
 
 
 
 **执行mero**
 
-![emero](/img/schema/mero.png)
+````bas
+[root@rel43-em mero]# ls -l
+total 4
+drwxr-xr-x 5 root root   40 May 30 00:09 Back
+-rw-r--r-- 1 root root 1097 May 30 00:08 schema.yml
+[root@rel43-em mero]# mero .
+Product package create success: "Test_pkg_v1.0.1.tar"
+[root@rel43-em mero]# ls -l
+total 12
+drwxr-xr-x 5 root root   40 May 30 00:09 Back
+-rw-r--r-- 1 root root 1097 May 30 00:08 schema.yml
+-rw-r--r-- 1 root root 5120 May 30 00:26 Test_pkg_v1.0.1.tar
+[root@rel43-em mero]# 
+````
+
+
+
+
 
 
 
