@@ -74,11 +74,16 @@ const config = {
             label: 'Download',
           },
           {
-            type: 'docSidebar',
+            href: 'http://chengying.dtstack.cn/login',
+            label: '快速体验',
             position: 'left',
-            sidebarId: 'roadmap',
-            label: 'Roadmap',
           },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   sidebarId: 'roadmap',
+          //   label: 'Roadmap',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',

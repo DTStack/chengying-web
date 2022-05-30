@@ -20,18 +20,6 @@ sidebar_position: 4
 7. 在提交 pull request 请求前, 请将您克隆的代码和远程代码库同步，这样您的 pull request 会简单清晰。
 
 
-
-## 代码约束
-
-保持代码的一致性，提高代码的可读性来保证代码的高质量及高维护性。我们的代码风格和标准 Java 约定一致，并参考《阿里巴巴Java开发手册》。
-
-
-## 代码风格
- 
-## 框架使用规范
-
-## 命名规范
-
 ## Commitment 规范
 
 Commit Message 三段式格式要求，模板：`[${jira-issue-id}] [${affected-component}] ${jira-issue-title}`
