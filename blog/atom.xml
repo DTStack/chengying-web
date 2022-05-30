@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dtstack.github.io/chengying-web/chengying-web/blog</id>
+    <title>ChengYing 承影 Blog</title>
+    <updated>2022-05-11T09:57:22.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://dtstack.github.io/chengying-web/chengying-web/blog"/>
+    <subtitle>ChengYing 承影 Blog</subtitle>
+    <icon>https://dtstack.github.io/chengying-web/chengying-web/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[架构介绍]]></title>
+        <id>blog1</id>
+        <link href="https://dtstack.github.io/chengying-web/chengying-web/blog/blog1"/>
+        <updated>2022-05-11T09:57:22.000Z</updated>
+    </entry>
+</feed>
