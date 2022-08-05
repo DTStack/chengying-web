@@ -17,7 +17,7 @@ sidebar_position: 1
 
 ### MySQL
 
-* [5.7.35 (md5: a715e5d29da1c2952e75c7137934b821)](https://dtstack-opensource.oss-cn-hangzhou.aliyuncs.com/chengying/MYSQL_5.7.35_centos7_x86_64.tar)
+* [5.7.38 (md5: b53108b3ec128e2ed3e1ad2e3ee66477)](https://dtstack-opensource.oss-cn-hangzhou.aliyuncs.com/chengying/Mysql_5.7.38_centos7_x86_64.tar)
 
 ### Hadoop
 

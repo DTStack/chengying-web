@@ -12,7 +12,7 @@ sidebar_position: 4
 这是一个贡献者工作流程的大致说明：
 
 1. 克隆 ChengYing 项目
-2. 从希望贡献的分支上创新新的分支，通常是 master 分支。
+2. 从希望贡献的分支上创建新的分支，通常是 master 分支。
 3. 提交您的更改。
 4. 确保提交消息的格式正确。
 5. 将新分支推送到您克隆的代码库中。
@@ -34,4 +34,4 @@ Commit Message 三段式格式要求，模板：`[${jira-issue-id}] [${affected-
 
 我们使用钉钉 沟通交流，可以搜索群号[30537511]或者扫描下面的二维码进入钉钉群
 
-![ding](/img/ding.jpg)
+![ding](/img/chengying交流群.jpg)
