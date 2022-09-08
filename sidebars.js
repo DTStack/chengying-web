@@ -39,6 +39,9 @@ const sidebars = {
           "chengyingDocs/introduction/clusterService",
           "chengyingDocs/introduction/monitor",
           "chengyingDocs/introduction/schema",
+          "chengyingDocs/introduction/commonUpgrade",
+          "chengyingDocs/introduction/smoothUpgrade",
+          "chengyingDocs/introduction/productLine",
       ]
     },
 
