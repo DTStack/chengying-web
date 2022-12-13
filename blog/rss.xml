@@ -4,14 +4,14 @@
         <title>ChengYing 承影 Blog</title>
         <link>https://dtstack.github.io/chengying-web/chengying-web/blog</link>
         <description>ChengYing 承影 Blog</description>
-        <lastBuildDate>Wed, 11 May 2022 09:57:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Nov 2022 08:38:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[架构介绍]]></title>
             <link>https://dtstack.github.io/chengying-web/chengying-web/blog/blog1</link>
             <guid>blog1</guid>
-            <pubDate>Wed, 11 May 2022 09:57:22 GMT</pubDate>
+            <pubDate>Tue, 22 Nov 2022 08:38:19 GMT</pubDate>
         </item>
     </channel>
 </rss>
