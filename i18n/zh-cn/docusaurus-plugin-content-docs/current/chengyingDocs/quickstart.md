@@ -45,7 +45,7 @@ $ docker-compose up -d
 ```
 地址：http://local_ip # local_ip为Chengying所在机器ip
 用户名：admin@dtstack.com
-密码：DT#passw0rd2019
+密码：
 ```
 
 ## 源码构建
