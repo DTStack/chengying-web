@@ -24,3 +24,12 @@ where deploy_host.isDeleted = 0
 );
 ```
 删除查询出来的记录即可。
+
+### Q: 主机接入后，页面一直没有显示
+A: 此类问题一般是网络不通导致，先排查端口是否都正常，在agent上对chengying的8889，8864，8890进行telnet。
+
+### Q: 主机初始化失败，sudo: no tty present and noaskpass
+A: 接入用户没有sudo权限，登陆接入主机，切换到root用户，执行visudo，添加用户的免密操作
+
+
+
